@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+aoyama_main:
+  id: 1 
+  a_idollist_id: 1
+  detail_url: http://www.dmm.com/digital/idol/-/list/=/article=actor/id=179175/
+

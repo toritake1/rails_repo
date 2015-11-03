@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+ka_detail_1:
+  id: 1
+  ka_idollist_id: 1
+  title: SMILE ESCAPE 片岡沙耶
+  dvd_thumbnail: http://pics.dmm.com/digital/video/5085enfd05608/5085enfd05608pt.jpg
+  dvd_url: http://www.dmm.com/digital/idol/-/detail/=/cid=5085enfd05608/
+
+ka_detail_2:
+  id: 2
+  ka_idollist_id: 1
+  title: ミルキー・グラマー 片岡沙耶
+  dvd_thumbnail: http://pics.dmm.com/digital/video/5013tsdv41596/5013tsdv41596pt.jpg
+  dvd_url: http://www.dmm.com/digital/idol/-/detail/=/cid=5013tsdv41596/
+
+ka_detail_3:
+  id: 3
+  ka_idollist_id: 1
+  title: I-ONE NEXT 片岡沙耶
+  dvd_thumbnail: http://pics.dmm.com/digital/video/5125ionxt40685/5125ionxt40685pt.jpg
+  dvd_url: http://www.dmm.com/digital/idol/-/detail/=/cid=5125ionxt40685/
+
+

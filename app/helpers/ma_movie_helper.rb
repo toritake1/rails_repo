@@ -1,0 +1,2 @@
+module MaMovieHelper
+end

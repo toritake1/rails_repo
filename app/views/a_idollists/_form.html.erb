@@ -1,0 +1,17 @@
+<%= form_for(@idollist) do |f| %>
+  <% if @idollist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@idollist.errors.count, "error") %> prohibited this idollist from being saved:</h2>
+
+      <ul>
+      <% @idollist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

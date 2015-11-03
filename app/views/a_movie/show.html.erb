@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<% @movielist.each do |movie| %>
+        <h2><%= movie.description %></h2>
+
+        <div class="container">
+          <div class="video-wrapper">
+           <div class="video-container">
+                <%== movie.url %>
+           </div>
+          </div>
+        </div>
+	<p><small>引用元：
+        <%= link_to movie.link , :target=>["_blank"]   do %>
+       		<%= movie.link %><br>
+        <% end %>
+	</small>
+	</p>
+<% end %>
+
+<br>
+
+

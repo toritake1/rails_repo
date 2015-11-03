@@ -1,0 +1,2 @@
+module RaMovieHelper
+end

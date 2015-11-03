@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Idol</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+
+<body>
+   <%= render 'layouts/header' %>
+   <div id="wrap">
+    <div class="container main-content">
+      <div class="row">
+        <div class="col-md-9 content-area">
+           <%= yield %>　　<!-- ※この行は各ページを表示するための、最初から存在する。 -->
+        </div>
+        <div class="col-md-3 sidebar">
+           <%= render 'layouts/sidebar' %>
+       </div>
+      </div>
+    </div>
+   </div>
+    <%= render 'layouts/footer' %>
+</body>
+</html>
+

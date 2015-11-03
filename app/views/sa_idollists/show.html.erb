@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<%= @idollist.idol_name %><br>
+
+生年月日：<%= @idollist.year %>年<%= @idollist.month %>月<%= @idollist.day %>日<br>
+サイズ：<%= @idollist.height %>cm / B<%= @idollist.bust %>
+<% if @idollist.cup != 'none' %>
+	(<%= @idollist.cup %>)
+<% end %>
+ / W<%= @idollist.west %> / H<%= @idollist.hip %><br>
+<br><br>
+
+
+<% if @idollist.twitter != 'none' %>
+	<%= link_to 'Twitter', @idollist.twitter, :target=>["_blank"] %>
+        <br><br>
+<% end %>
+
+<% @movielist.each do |movie| %>
+        <% if movie.description.present? then %>
+                <%= link_to movie , data: { "no-turbolink" => true }  do %>
+                        <%= image_tag movie.movie_thumbnail, size: '180x135' %>
+                        <p><%= movie.created_at.strftime("%Y-%m-%d %H:%M") %></p>
+                        <p><%= movie.description %></p>
+                <% end %>
+        <% end %>
+<% end %>
+<br>
+<%= paginate @movielist %>
+<br>
+
+<hr>
+
+<p>DMM動画<p>
+<br>
+<% @idollist.sa_dmm_details.each do |detail| %>
+        <%= link_to detail.dvd_url,  :target=>["_blank"] do %>
+        <%= image_tag detail.dvd_thumbnail, size: '124x169' %>
+        <span><%= detail.title %></span>
+        <% end %>
+
+<% end %>
+
+<br><br>

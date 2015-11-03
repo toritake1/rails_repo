@@ -1,0 +1,27 @@
+<header>
+<!--navbar-inverseで黒色のナビゲーションへ-->
+     <nav class="navbar navbar-inverse"> 
+<!--          <nav class="navbar navbar-default"> -->
+         
+         <!--ウィンドウ幅に合わせて可変-->
+        <div class="container-fluid">
+            
+          <div class="navbar-header">
+              
+            <!--スマホ用トグルボタンの設置-->
+              
+            <!--ロゴ表示の指定-->
+            <a class="navbar-brand" href="/">グラドル検索</a>
+          </div>
+            
+            <!--スマホ用の画面幅が小さいときの表示を非表示にする-->
+              
+            <ul class="nav navbar-nav">
+              <li><%= link_to "アイドル一覧", :idol_list %></li>
+              <li><%= link_to "カップサイズ", :cup_list %></li>
+              <li><%= link_to "バストサイズ", :bust_list %></li>
+            </ul>
+            
+        </div><!--/.container-fluid -->
+      </nav>
+</header>

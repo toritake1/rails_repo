@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+aoyama:
+  id: 1 
+  idol_name: 青山ひかる
+  wiki_name: 青山ひかる_(タレント)
+  family_name_kana: あおやま
+  given_name_kana: ひかる
+  year: 1993
+  month: 6
+  day: 13
+  height: 154
+  bust: 95
+  west: 59
+  hip: 90
+  cup: I
+  twitter: https://twitter.com/hikaru06kon
+

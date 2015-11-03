@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+kataoka:
+  id: 1
+  idol_name: 片岡沙耶
+  wiki_name: 片岡沙耶
+  family_name_kana: かたおか
+  given_name_kana: さや
+  year: 1993
+  month: 7
+  day: 18
+  height: 154
+  bust: 90
+  west: 62
+  hip: 82
+  cup: G
+  twitter: https://twitter.com/__saya38__
+

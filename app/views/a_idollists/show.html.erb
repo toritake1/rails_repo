@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @idollist.idol_name %></h1>
+
+<p>生年月日：<%= @idollist.year %>年<%= @idollist.month %>月<%= @idollist.day %>日</p>
+<p>サイズ：<%= @idollist.height %>cm / B<%= @idollist.bust %>
+<% if @idollist.cup != 'none' %>
+	(<%= @idollist.cup %>)
+<% end %>
+ / W<%= @idollist.west %> / H<%= @idollist.hip %></p>
+
+<% if @idollist.twitter != 'none' %>
+	<p><%= link_to 'Twitter', @idollist.twitter, :target=>["_blank"] %></p>
+<% end %>
+
+<h3><%= @idollist.idol_name %>の動画一覧 </h3>
+<% @movielist.each do |movie| %>
+        <% if movie.description.present? then %>
+		 <div class="thumbnail">
+		  <div class="row">
+                  <%= link_to movie, data: { "no-turbolink" => true} do %>
+			 <div class="col-md-4">
+			  <%= image_tag movie.movie_thumbnail %>
+			 </div>
+		  <% end %>
+			 <div class="col-md-5">
+			  <div class="caption">
+                           <small><%= movie.created_at.strftime("%Y-%m-%d %H:%M") %></small>
+			   <small><%= link_to @idollist.idol_name, a_idollist_path(@idollist) %></small>
+                           <p><%= link_to movie.description, movie, data: { "no-turbolink" => true} %></p>
+			  </div>
+			 </div>
+                 </div>
+		</div>
+        <% end %>
+<% end %>
+
+<%= paginate @movielist %>
+
+
+<h3>DMM動画</h3>
+
+<div class="row">
+<% @idollist.a_dmm_details.each do |detail| %>
+	 <div class="col-xs-6 col-md-2">
+	    <div class="thumbnail"> 
+		<%= link_to detail.dvd_url, :title=>detail.title,  :target=>["_blank"] do %>
+        		  <%= image_tag detail.dvd_thumbnail %>
+		<% end %>
+	    </div> 
+	 </div>
+<% end %>
+</div>
+
+

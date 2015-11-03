@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+watanabe_detail_1:
+  id: 1
+  wa_idollist_id: 1
+  title: shine LOVE YOURS 渡辺未優
+  dvd_thumbnail: http://pics.dmm.com/digital/video/406mps00010/406mps00010pt.jpg
+  dvd_url: http://www.dmm.com/digital/idol/-/detail/=/cid=406mps010/
+
+wakatsuki_detail_1:
+  id: 2
+  wa_idollist_id: 2
+  title: PRESENT 若槻千夏
+  dvd_thumbnail: http://pics.dmm.com/digital/video/5242lpdd00002/5242lpdd00002pt.jpg
+  dvd_url: http://www.dmm.com/digital/idol/-/detail/=/cid=5242lpdd00002/

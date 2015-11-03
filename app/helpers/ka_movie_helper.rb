@@ -1,0 +1,2 @@
+module KaMovieHelper
+end

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+hoshino:
+  id: 1
+  idol_name: 星名美津紀
+  wiki_name: 星名美津紀
+  family_name_kana: ほしな
+  given_name_kana: みづき
+  year: 1996
+  month: 5
+  day: 14
+  height: 164
+  bust: 92
+  west: 64
+  hip: 88
+  cup: H
+  twitter: https://twitter.com/hoshina_mizuki
+
+hamada:
+  id: 2
+  idol_name: 浜田翔子
+  wiki_name: 浜田翔子_(タレント)
+  family_name_kana: はまだ
+  given_name_kana: しょうこ
+  year: 1986
+  month: 1
+  day: 1
+  height: 157
+  bust: 80
+  west: 54
+  hip: 83
+  cup: none
+  twitter: https://twitter.com/shokohamada
+

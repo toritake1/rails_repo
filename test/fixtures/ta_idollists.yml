@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+tsugihara:
+  id: 1
+  idol_name: 次原かな
+  wiki_name: 次原かな
+  family_name_kana: つぎはら
+  given_name_kana: かな
+  year: 1984
+  month: 8
+  day: 25
+  height: 158
+  bust: 87
+  west: 60
+  hip: 88
+  cup: G
+  twitter: none
+

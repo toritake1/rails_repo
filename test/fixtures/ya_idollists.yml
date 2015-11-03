@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+
+yasuda:
+  id: 1
+  idol_name: 保田真愛
+  wiki_name: 保田真愛
+  family_name_kana: やすだ
+  given_name_kana: まい
+  year: 1993
+  month: 12
+  day: 13
+  height: 165
+  bust: 76
+  west: 60
+  hip: 90
+  cup: none
+  twitter: none
+

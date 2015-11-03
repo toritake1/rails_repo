@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<%= @idollist.idol_name %><br>
+
+<%= image_tag @idollist.dmm_main.thumbnail, alt: @idollist.idol_name, size: '80x80' %><br>
+生年月日：<%= @idollist.year %>年<%= @idollist.month %>月<%= @idollist.day %>日<br>
+サイズ：<%= @idollist.height %>cm / B<%= @idollist.bust %>
+<% if @idollist.cup != 'none' %>
+	(<%= @idollist.cup %>)
+<% end %>
+ / W<%= @idollist.west %> / H<%= @idollist.hip %><br>
+
+
+<% if @idollist.twitter != 'none' %>
+	<%= link_to 'Twitter', @idollist.twitter, :target=>["_blank"] %>
+<% end %>
+
+<hr>
+
+<% @idollist.dmm_details.each do |detail| %>
+	<%= link_to detail.dvd_url,  :target=>["_blank"] do %>
+	<span><%= detail.title %></span>
+	<%= image_tag detail.dvd_thumbnail, size: '124x169' %>
+	<% end %>
+
+<% end %>
+
+
+
+<hr>
+<%= link_to 'Back', idollists_path %>
